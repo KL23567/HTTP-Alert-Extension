@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "HTTP Alert Extension",
+    "version": "1.0",
+    "description": "Alerts the user when visiting an HTTP website.",
+    "permissions": ["webNavigation", "notifications"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "host_permissions": ["http://*/*"],
+    "icons": {
+        "16": "icons/icon-16.png",
+        "48": "icons/icon-48.png",
+        "128": "icons/icon-128.png"
+      },
+      "web_accessible_resources": [
+        {
+          "resources": ["icons/icon-128.png"],
+          "matches": ["<all_urls>"]
+        }
+      ]
+      
+}
+
+  
